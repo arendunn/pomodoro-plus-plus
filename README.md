@@ -1,24 +1,27 @@
-⏱️ Pomodoro++
+## ⏱️ Pomodoro++
 
 Pomodoro++ is a gamified productivity web app designed to make focus sessions fun, rewarding, and effective. It enhances the classic Pomodoro Technique with a clean UI, smooth interactions, and plans for future gamification features like levels, streaks, and rewards.
 
-🌟 Features
 
-🕒 Custom Pomodoro Timer – Work and break sessions with start, pause, and reset functionality
+## 🌟 Features
 
-🔔 Sound Alerts – Play an alarm when each session ends
+# 🕒 Custom Pomodoro Timer – Work and break sessions with start, pause, and reset functionality
 
-🎮 Gamified Experience – Earn progress and motivation through interactive feedback (in progress)
+# 🔔 Sound Alerts – Play an alarm when each session ends
 
-💾 Session Tracking (Planned) – Track completed Pomodoros and streaks
+# 🎮 Gamified Experience – Earn progress and motivation through interactive feedback (in progress)
 
-🎨 Minimal, Modern Design – Built for simplicity and focus
+# 💾 Session Tracking (Planned) – Track completed Pomodoros and streaks
 
-🧠 The Idea
+# 🎨 Minimal, Modern Design – Built for simplicity and focus
+
+
+## 🧠 The Idea
 
 Traditional timers can feel repetitive — Pomodoro++ aims to make productivity more engaging. By introducing a gamified experience, users are motivated to stay consistent, track progress, and enjoy the process of working in focused intervals.
 
-🧩 Tech Stack
+
+## 🧩 Tech Stack
 
 HTML5 – Page structure
 
@@ -28,7 +31,8 @@ JavaScript (ES6) – Timer logic and interactivity
 
 (Future additions: LocalStorage, animations, progress tracking, leaderboard)
 
-🚀 Getting Started
+
+## 🚀 Getting Started
 1. Clone the repository
 git clone https://github.com/yourusername/pomodoro-plus-plus.git
 cd pomodoro-plus-plus
@@ -37,7 +41,8 @@ cd pomodoro-plus-plus
 
 Simply open index.html in your browser.
 
-🛠️ Folder Structure
+
+## 🛠️ Folder Structure
 pomodoro-plus-plus/
 │
 ├── index.html
@@ -50,27 +55,31 @@ pomodoro-plus-plus/
 │   └── style.css
 └── README.md
 
-🔮 Future Plans
 
-🧭 Customizable session durations
+## 🔮 Future Plans
 
-🏆 Points and levels for completed Pomodoros
+# 🧭 Customizable session durations
 
-📊 Dashboard for productivity stats
+# 🏆 Points and levels for completed Pomodoros
 
-🎵 More sound options and themes
+# 📊 Dashboard for productivity stats
 
-☁️ Save data using LocalStorage or Firebase
+# 🎵 More sound options and themes
 
-💡 Inspiration
+# ☁️ Save data using LocalStorage or Firebase
+
+
+## 💡 Inspiration
 
 Inspired by the Pomodoro Technique — a proven time management method that breaks work into focused intervals with short breaks to maximize productivity and prevent burnout.
 
-🧑‍💻 Author
+
+## 🧑‍💻 Author
 
 Aren Dunn
 Passionate about building interactive web experiences and exploring how technology can make everyday productivity more enjoyable.
 
-📜 License
+
+## 📜 License
 
 This project is open source under the MIT License — feel free to use and modify it for your own productivity experiments.
