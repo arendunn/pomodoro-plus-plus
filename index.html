@@ -4,20 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pomodoro++</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1>Pomodoro++</h1>
+            <img src="assets/icons/logo.png">
         </header>
-        <main>
-            <h2>Timer</h2>
-            <div id="time-display" class="time-display">25:00</div>
-            <button id="start-btn">Start</button>
-            <button id="pause-btn">Pause</button>
-            <button id="reset-btn">Reset</button>
-        </main>
-        
+
         <!-- Popup Modal -->
         <div id="alarm-popup" class="popup hidden">
         <div class="popup-content">
@@ -26,6 +19,27 @@
             <button id="ack-btn">OK</button>
         </div>
         </div>
+
+        <main class="center">
+            <div class="timer-container center container">
+                <span id="text-display"></span>
+                <div id="time-display" class="time-display">25:00</div>
+                <div>
+                    <button id="start-btn">Start</button> | 
+                    <button id="pause-btn">Pause</button> | 
+                    <button id="reset-btn">Reset</button>
+                </div>
+            </div>
+
+            <div class="center container">
+                <span>SETTINGS</span>
+                <div class="center settings">
+                    <a>Test</a>
+                    <a>Test</a>
+                    <a>Test</a>
+                </div>
+            </div>
+        </main>
 
         <script type="module" src="components/timer.js"></script>
     </body>

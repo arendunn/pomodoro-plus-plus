@@ -5,6 +5,7 @@ let isRunning = false;
 let currentSession = 'work'; // 'work' | 'break'
 
 // DOM elements
+const textDisplay = document.getElementById('text-display');
 const timeDisplay = document.getElementById('time-display');
 const startBtn = document.getElementById('start-btn');
 const pauseBtn = document.getElementById('pause-btn');
@@ -22,6 +23,12 @@ function formatTime(seconds) {
 // Update the timer display
 function updateDisplay() {
     timeDisplay.textContent = formatTime(timeLeft);
+
+    if (currentSession == 'work') {   
+        textDisplay.innerHTML = "WORK";
+    } else {
+        textDisplay.innerHTML = "BREAK"
+    }
 }
 
 // Start the timer
@@ -52,7 +59,7 @@ function pauseTimer() {
 function resetTimer() {
     clearInterval(timerInterval);
     isRunning = false;
-    timeLeft = currentSession === 'work' ? 20 * 60 : 5 * 60;
+    timeLeft = currentSession === 'work' ? 25 * 60 : 5 * 60;
     updateDisplay();
 }
 
