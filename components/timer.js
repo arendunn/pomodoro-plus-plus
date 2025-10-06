@@ -9,6 +9,8 @@ const timeDisplay = document.getElementById('time-display');
 const startBtn = document.getElementById('start-btn');
 const pauseBtn = document.getElementById('pause-btn');
 const resetBtn = document.getElementById('reset-btn');
+const popup = document.getElementById('alarm-popup');
+const ackBtn = document.getElementById('ack-btn');
 
 // Format seconds to mm:ss
 function formatTime(seconds) {
@@ -50,7 +52,7 @@ function pauseTimer() {
 function resetTimer() {
     clearInterval(timerInterval);
     isRunning = false;
-    timeLeft = currentSession === 'work' ? 25 * 60 : 5 * 60;
+    timeLeft = currentSession === 'work' ? 20 * 60 : 5 * 60;
     updateDisplay();
 }
 
@@ -63,11 +65,28 @@ function switchSession() {
     // startTimer();
 }
 
-// Play alarm when session ends
+let alarm = null;
+
 function playAlarm() {
-    const alarm = new Audio('assets/sounds/alarm.mp3');
-    alarm.play();
+  alarm = new Audio('assets/sounds/alarm.mp3');
+  alarm.loop = true; // keep playing until user stops
+  alarm.play();
+  showPopup();
 }
+
+function showPopup() {
+  popup.classList.remove('hidden');
+}
+
+function hidePopup() {
+  popup.classList.add('hidden');
+  if (alarm) {
+    alarm.pause();
+    alarm.currentTime = 0;
+  }
+}
+
+ackBtn.addEventListener('click', hidePopup);
 
 // Initialize button listeners
 function initTimer() {
